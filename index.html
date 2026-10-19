@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практическая работа — CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Практическая работа по CSS</h1>
+      <nav class="nav" aria-label="Главное меню">
+        <a class="nav-link active" href="#buttons">Кнопки</a>
+        <a class="nav-link" href="#menu">Меню</a>
+        <a class="nav-link" href="#specificity">Специфичность</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="panel" id="buttons">
+      <h2>Задание 1. Система кнопок</h2>
+      <p>Кнопки имеют общие стили и разные цвета. Наведи курсор на кнопки.</p>
+      <div class="button-row">
+        <button class="btn btn-primary" type="button">Основная кнопка</button>
+        <button class="btn btn-secondary" type="button">Дополнительная кнопка</button>
+      </div>
+    </section>
+    <section class="panel" id="menu">
+      <h2>Задание 2. Меню</h2>
+      <p>Ссылки меню меняют цвет при наведении и при нажатии.</p>
+      <nav class="demo-nav" aria-label="Пример меню">
+        <a class="nav-link" href="#buttons">Главная</a>
+        <a class="nav-link" href="#menu">Услуги</a>
+        <a class="nav-link" href="#specificity">Контакты</a>
+      </nav>
+    </section>
+    <section class="panel" id="specificity">
+      <h2>Задание 3. Специфичность без !important</h2>
+      <p class="notice">Это обычный текст уведомления.</p>
+      <p class="notice" id="special-notice">Этот текст выделен благодаря более специфичному селектору.</p>
+      <p>Селектор <code>#special-notice</code> имеет больший вес, чем <code>.notice</code>.</p>
+    </section>
+  </main>
+  <footer class="container footer">HTML + CSS • Практическая работа</footer>
+</body>
+</html>
